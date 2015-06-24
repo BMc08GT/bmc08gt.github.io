@@ -78,7 +78,7 @@ header {
 
 .findme {
   margin: 20px 0;
-  height: calc(50vh - 156px);
+  height: calc(50vh - 100px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
