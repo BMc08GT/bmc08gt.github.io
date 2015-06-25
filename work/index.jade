@@ -2,10 +2,11 @@ doctype html
 html(lang="en")
   head
     title BMc | Work
+    meta(charset="utf-8")
     link(rel="icon",sizes="any",mask="",href="img/somesvg.svg")
     meta(name="theme-color",content="#4078c0")
     link(rel="shortcut icon", href="img/favicon.png")
-    link(rel="stylesheet",href="css/main.css")
+    link(rel="stylesheet",href="css/work.css")
     meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     meta(name="author",content="Brandon McAnsh")
     meta(name="description",content="SOMETHING CAN GO HERE")
@@ -17,4 +18,27 @@ html(lang="en")
     <!-- website made by @mcansh on github -->
     
   body
-    
+    header
+      nav
+        .backarrow
+          a(href="../")
+            i(class="material-icons back_arrow") &#xE5C4;
+        .links
+          a(href="#aokp") AOKP
+          a(href="#cyanogen") CM 
+          a(href="#apps") Apps 
+          a(href="#firmware") Firmware
+
+    .work
+      #aokp.aokp
+        h1 AOKP
+        .aokp-image
+      #cyanogen.cyanogen
+        h1 Cyanogen
+        .cm-image
+      #apps.apps
+        h1 Apps
+        .apps-image
+      #firmware.firmware
+        h1 Firmware
+        .fw-image
