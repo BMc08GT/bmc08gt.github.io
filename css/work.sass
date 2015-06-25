@@ -10,7 +10,7 @@ body
   font-family: "Roboto"
 
 header
-  background: $red-dark
+  background: $red-500
   padding: 20px 0
   position: fixed
   width: 100vw
@@ -59,6 +59,7 @@ header
         image: url(http://www.fillmurray.com/g/150/150)
         size: cover
       +size(150px)
+
   .cyanogen
     @extend .aokp
     .cm-image
@@ -66,13 +67,21 @@ header
         image: url(http://www.fillmurray.com/g/150/150)
         size: cover
       +size(150px)
+
   .apps
     @extend .aokp
     .apps-image
       background:
-        image: url(http://www.fillmurray.com/g/150/150)
+        image: url(../img/wearresponses.jpg)
         size: cover
       +size(150px)
+      margin-top: 20px
+    h2
+      padding-top: 20px
+    p
+      max-width: 600px
+      padding-top: 20px
+
   .firmware
     @extend .aokp
     .fw-image
