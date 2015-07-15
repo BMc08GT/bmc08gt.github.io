@@ -1,0 +1,28 @@
+@import "colors"
+
+header
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 50vh
+  width: 100vw
+  background: $teal-700
+  box-shadow: -1px 10px 5px 0px rgba(204,204,204,1)
+
+  .profile
+    background:
+      image: url(../img/avatar.jpg)
+      size: cover
+      position: center
+    +size(150px)
+    border-radius: 50%
+    transition: all ease-in-out 300ms
+    &:hover
+      transform: rotate(360deg)
+
+  h1
+    color: white
+    margin-top: 20px
+  h2
+    color: #ccc

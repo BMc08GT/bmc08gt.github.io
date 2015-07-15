@@ -1,216 +1,77 @@
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url(font-awesome.min.css);
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
-  font-weight: 200; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 300; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700; }
-@font-face {
-  font-family: "Material-Design-Icons";
-  src: url("../font/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../font/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* colors from google design http://www.google.com/design/spec/style/color.html */
-/* Red */
-/* Pink */
-/* Purple */
-/* Deep Purple */
-/* Indigo */
-/* Blue */
-/* Light Blue */
-/* Cyan */
-/* Teal */
-/* Green */
-/* Light Green */
-/* Lime */
-/* Yellow */
-/* Amber */
-/* Orange */
-/* Deep Orange */
-/* Brown */
-/* Grey */
-/* Blue Grey */
-* {
-  margin: 0; }
+/*
+Error: Undefined variable: "$teal-700".
+        on line 10 of /Users/loganmcansh/Dropbox/web/github/bmc08gt.github.io/css/header.sass
+        from line 5 of /Users/loganmcansh/Dropbox/web/github/bmc08gt.github.io/css/main.sass
 
-html, body {
-  height: 100%; }
+5: @import "header"
+6: @import "findme"
+7: @import "footer"
+8: @import "media"
+9: @import "bourbon"
+10: @import url(https://fonts.googleapis.com/icon?family=Material+Icons)
+11: @import "font-awesome.min.css"
+12: 
+13: *
+14:   margin: 0
+15: 
 
-body {
-  font-family: "Roboto"; }
-
-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50vh;
-  width: 100vw;
-  background: #00796B;
-  box-shadow: -1px 10px 5px 0px #cccccc; }
-  header nav {
-    padding: 23px 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #004D40;
-    width: 100vw;
-    top: 0;
-    position: absolute; }
-    header nav .links a {
-      color: white;
-      text-decoration: none;
-      padding: 5px 10px;
-      font-size: 24px; }
-      header nav .links a:hover {
-        box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 0px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 0px 1px;
-        border-radius: 2px; }
-  header .profile {
-    background-image: url(../img/avatar.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    -webkit-transition: all ease-in-out 300ms;
-            transition: all ease-in-out 300ms; }
-    header .profile:hover {
-      -webkit-transform: rotate(360deg);
-          -ms-transform: rotate(360deg);
-              transform: rotate(360deg); }
-  header h1 {
-    color: white;
-    margin-top: 20px; }
-  header h2 {
-    color: #ccc; }
-
-.findme {
-  margin: 20px 0;
-  height: calc(50vh - 100px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .findme h1 {
-    font-weight: 400; }
-  .findme .links {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .findme .links .fa {
-      margin: 20px;
-      font-size: 36px;
-      color: #80CBC4;
-      -webkit-transition: 200ms all ease-in-out;
-              transition: 200ms all ease-in-out; }
-      .findme .links .fa:hover {
-        -webkit-transform: scale(1.25);
-            -ms-transform: scale(1.25);
-                transform: scale(1.25); }
-    .findme .links .fa-twitter:hover {
-      color: #55acee; }
-    .findme .links .fa-google-plus:hover {
-      color: #dd4b39; }
-    .findme .links .fa-github:hover {
-      color: black; }
-    .findme .links .fa-linkedin:hover {
-      color: #0077b5; }
-
-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 0;
-  width: 100vw;
-  height: 50px; }
-
-@media (max-width: 400px) {
-  .findme {
-    margin: 50px 0 20px 0; }
-    .findme .links {
-      margin: 20px; } }
-@media (max-width: 800px) and (orientation: landscape) {
-  header {
-    height: 100vh; }
-
-  .findme {
-    height: 20vh;
-    margin: 20px 0 20px 0; }
-    .findme .links {
-      margin: 20px; } }
-@media (max-width: 330px) {
-  header {
-    height: 100vh; }
-
-  .findme {
-    margin: 80px 0 40px 0; } }
+Backtrace:
+/Users/loganmcansh/Dropbox/web/github/bmc08gt.github.io/css/header.sass:10
+/Users/loganmcansh/Dropbox/web/github/bmc08gt.github.io/css/main.sass:5
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:415:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/sass:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$teal-700\".\A         on line 10 of /Users/loganmcansh/Dropbox/web/github/bmc08gt.github.io/css/header.sass\A         from line 5 of /Users/loganmcansh/Dropbox/web/github/bmc08gt.github.io/css/main.sass\A \A 5: @import \"header\"\A 6: @import \"findme\"\A 7: @import \"footer\"\A 8: @import \"media\"\A 9: @import \"bourbon\"\A 10: @import url(https://fonts.googleapis.com/icon?family=Material+Icons)\A 11: @import \"font-awesome.min.css\"\A 12: \A 13: *\A 14:   margin: 0\A 15: "; }

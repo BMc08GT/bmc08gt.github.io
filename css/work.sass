@@ -1,16 +1,10 @@
+@import "bourbon"
+@import "base"
 @import "fonts"
 @import "colors"
-@import "bourbon"
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons")
-@import "font-awesome.min.css"
-*
-  margin: 0
-
-body
-  font-family: "Roboto"
 
 header
-  background: $red-500
+  background: $red-dark
   padding: 20px 0
   position: fixed
   width: 100vw
@@ -23,14 +17,6 @@ header
       display: flex
       justify-content: flex-start
       flex-grow: 1
-    .links
-      a
-        color: white
-        text-decoration: none
-        padding: 5px 10px
-        &:hover
-          box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 0px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 0px 1px
-          border-radius: 2px
 
     .back_arrow
       font-size: 24px
@@ -40,6 +26,15 @@ header
       &:hover
         box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 0px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 0px 1px
         border-radius: 2px
+
+    .links
+      a
+        color: white
+        text-decoration: none
+        padding: 5px 10px
+        &:hover
+          @extend .back_arrow:hover
+
 
 .work
   width: 100vw
@@ -56,42 +51,56 @@ header
     justify-content: center
     .aokp-image
       background:
-        image: url(http://www.fillmurray.com/g/150/150)
+        image: url(../img/aokp.png)
         size: cover
-      +size(150px)
+<<<<<<< HEAD
+        position: center
+      height: 220px
+      width: 750px
 
+=======
+      +size(150px)
+>>>>>>> parent of b5b3f99... added all the colors from google design colors, just in case; added scaling to social links
   .cyanogen
     @extend .aokp
     .cm-image
       background:
-        image: url(http://www.fillmurray.com/g/150/150)
+        image: url(../img/cyanogen.png)
         size: cover
-      +size(150px)
+<<<<<<< HEAD
+        position: center
+      height: 200px
+      width: 770px
 
+=======
+      +size(150px)
+>>>>>>> parent of b5b3f99... added all the colors from google design colors, just in case; added scaling to social links
   .apps
     @extend .aokp
     .apps-image
       background:
-        image: url(../img/wearresponses.jpg)
+        image: url(http://www.fillmurray.com/g/150/150)
         size: cover
+        position: center
       +size(150px)
-      margin-top: 20px
+<<<<<<< HEAD
+    h1
+      padding-bottom: 20px
     h2
-      padding-top: 20px
+      padding-bottom: 20px
     p
       max-width: 600px
       padding-top: 20px
+      line-height: 1.5em
 
+=======
+>>>>>>> parent of b5b3f99... added all the colors from google design colors, just in case; added scaling to social links
   .firmware
     @extend .aokp
     .fw-image
       background:
-        image: url(http://www.fillmurray.com/g/150/150)
+        image: url(../img/matricom.png)
         size: cover
-      +size(150px)
-
-
-@media (max-width: 600px)
-  .work
-    .left-side
-      width: 100vw
+        position: center
+      height: 200px
+      width: 700px

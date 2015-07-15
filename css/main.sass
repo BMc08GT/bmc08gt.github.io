@@ -1,5 +1,11 @@
+@import "bourbon"
+@import "base"
 @import "fonts"
 @import "colors"
+@import "header"
+@import "findme"
+@import "footer"
+@import "media"
 @import "bourbon"
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons)
 @import "font-awesome.min.css"
@@ -21,28 +27,8 @@ header
   align-items: center
   height: 50vh
   width: 100vw
-  background: $teal-700
+  background: $teal
   box-shadow: -1px 10px 5px 0px rgba(204,204,204,1)
-
-  nav
-    padding: 23px 0
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    background: $teal-900
-    width: 100vw
-    top: 0
-    position: absolute
-    .links
-      a
-        color: white
-        text-decoration: none
-        padding: 5px 10px
-        font-size: 24px
-        &:hover
-          box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 0px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 0px 1px
-          border-radius: 2px
 
   .profile
     background:
@@ -78,10 +64,8 @@ header
       margin: 20px
       font:
         size: 36px
-      color: $teal-200
+      color: $teal-lighter
       transition: 200ms all ease-in-out
-      &:hover
-        transform: scale(1.25)
     .fa-twitter:hover
       color: #55acee
     .fa-google-plus:hover
@@ -118,3 +102,4 @@ footer
     height: 100vh
   .findme
     margin: 80px 0 40px 0
+>>>>>>> parent of b5b3f99... added all the colors from google design colors, just in case; added scaling to social links
