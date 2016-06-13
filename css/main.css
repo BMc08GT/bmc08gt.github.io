@@ -1814,7 +1814,7 @@ header {
     width: 150px;
     border-radius: 50%;
     transition: all ease-in-out 300ms; }
-    header .profile:hover {
+    header .profile.hover {
       transform: rotate(360deg); }
   header h1 {
     color: white;
