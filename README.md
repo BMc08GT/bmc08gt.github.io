@@ -1,3 +1,3 @@
 # bmc08gt.github.io
-http://brandonmcansh.com
+https://bmc08gt.github.io
 
